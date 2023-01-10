@@ -1,6 +1,5 @@
 function gotoSearchUrl(keyword, category) {
 	if (keyword.trim().length === 0) return; // expect the keyword to have meaningful content (not whitespace)
-	if (category === "none") return; // there is no category selected
 	// redirect to the search results including the category and keyword
 	window.location.assign(
 		`./search-results.html?format=${category}&q=${keyword}`
